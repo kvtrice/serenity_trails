@@ -1,0 +1,381 @@
+/* Universal Styles */
+
+body {
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'Monda', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h1{
+  font-family: 'Lalezar', sans-serif;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-family: 'Lalezar', sans-serif;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: 'Monda', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.logo {
+  height: 2rem;
+  width: 10.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styles */
+
+.primary {
+  font-family: 'Julius Sans One', serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.7rem 2.5rem;
+  background-color: #76A78E;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.primary:hover {
+  background-color: #E79574;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.primary:active {
+  color: white;
+}
+
+.primary:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.secondary {
+  font-family: 'Julius Sans One', serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: #6B5E62;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+
+.secondary:hover {
+  background-color: #BDBEA9;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* Nav Bar */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1.3rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: hsla(0, 0%, 100%, 0.6);
+  z-index: 5;
+}
+
+li {
+  font-family: 'Julius Sans One', serif;
+  display: inline-block;
+  padding-left: 1.5rem;
+}
+
+li:last-child {
+  display: inline-block;
+  margin-right: 3rem;
+}
+
+nav .logo {
+  margin-left: 3rem;
+}
+
+/* Hero */
+
+.hero {
+  background: url('Images/hero-image-boots.jpg') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.hero div h1 {
+  color: #E79574;
+}
+
+.hero div p {
+  color: white;
+  margin: 1rem 0;
+}
+
+.hero div button {
+  margin: 1.5rem 0;
+}
+
+#hero-btn {
+  padding: 1rem 4rem;
+}
+
+/* About / Mission Section */
+
+.about {
+  height: 400px;
+  background-color: #6B5E62;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+span {
+  font-family: 'Julius Sans One', serif;
+  font-size: 1.9rem;
+  color: white;
+}
+
+.mission {
+  font-size: 2.5rem;
+  color: white;
+  width: 60%;
+  padding-bottom: 1.5rem;
+}
+
+.about p {
+  width: 60%;
+  color: white;
+  line-height: 1.6;
+}
+
+@media only screen and (min-width: 1480px) {
+  .mission {
+    width: 75%;
+  }
+
+  .about p {
+    width: 75%;
+  }
+}
+
+/* Experiences Section */
+
+.experiences {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.experiences-heading {
+  text-align: center;
+  margin: auto 0;
+  padding-bottom: 2rem;
+}
+
+.card {
+  flex-basis: calc((100% - 4.5rem) / 3);
+  min-width: 300px;
+  height: 31.25rem;
+  border: #6B5E62 solid 1px;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.card h3 {
+  padding-top: 3rem;
+}
+
+.card p {
+  padding: 1.5rem 1.5rem;
+  line-height: 1.3;
+}
+
+.card button {
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 14rem;
+  max-height: 14rem;
+  border-radius: 5px 5px 0 0;
+}
+
+@media only screen and (min-width: 1480px) {
+  .card-section {
+    max-width: 75%;
+  }
+
+  .card {
+    flex-basis: calc((100% - 4.5rem) / 3); /* Width of each card in a row in order to limit cards to 3 per row only */
+  }
+
+}
+
+/* Final CTA */
+
+.final-cta {
+  background: url('Images/final-cta-image-enhanced.jpg') no-repeat center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 31.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.final-cta div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.final-cta h2 {
+  color: #E79574;
+  font-size: 6rem;
+  line-height: 1.5;
+}
+
+.cta-btn {
+  font-family: 'Julius Sans One', serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1rem 4rem;
+  background-color: white;
+  color: #6B5E62;
+  border-radius: 5px;
+  border: none;
+}
+
+.cta-btn:hover {
+  background-color: #76A78E;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* Footer */
+
+footer {
+  margin: auto 3rem;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+}
+
+.copy-socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copy-socials p {
+  font-size: 0.875rem;
+}
+
+.socials img {
+  width: 2.3rem;
+  height: 2.3rem;
+  padding-left: 0.5rem;
+}
+
+.kat {
+  padding-top: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.kat a {
+  text-decoration: underline;
+}
